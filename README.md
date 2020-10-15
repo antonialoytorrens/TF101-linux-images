@@ -684,6 +684,8 @@ Text -> White
 
 ### 5. Follow the same steps as chapters 7, 8 and 9 in XFCE.
 
+https://github.com/antonialoytorrens/TF101-linux-images#7-fixing-workaround-keyboard-f1-12-keys-with-xdotool-xbindkeys-xbacklight-and-alsa-utils-sound-does-not-work-at-the-moment
+
 ---
 
 ### 6. Reboot and done!
@@ -791,6 +793,8 @@ $ ./configure --prefix=/usr --sysconfdir=/etc --with-freetype2-includes=/usr/inc
 ---
 
 ### 5. Follow the same steps as chapters 7, 8 and 9 in XFCE.
+
+https://github.com/antonialoytorrens/TF101-linux-images#7-fixing-workaround-keyboard-f1-12-keys-with-xdotool-xbindkeys-xbacklight-and-alsa-utils-sound-does-not-work-at-the-moment
 
 ---
 
