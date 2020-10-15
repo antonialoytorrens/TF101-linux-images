@@ -773,7 +773,7 @@ $ wget https://github.com/antonialoytorrens/TF101-linux-images/raw/master/postma
 $ cd /tmp/ && tar -xvf xpdf-3.04-minimal.tar && sudo cp -r /tmp/xpdf-3.04/etc/ / && sudo cp  -r /tmp/xpdf-3.04/usr/ /
 </pre>
 
-### 4.2. Compiling xpdf (pdf reader)
+#### 4.2. Compiling xpdf (pdf reader)
 I have followed the guide from linux from scratch: http://www.linuxfromscratch.org/blfs/view/6.3/pst/xpdf.html
 
 So, type the following commands:
