@@ -447,8 +447,6 @@ EOF</pre>
 
 Note: https://github.com/the-cavalry/light-locker/issues/138
 
-There's an issue with some devices (TF101 included) when locking the screen, because it turns black and does not wake up, so follow these steps:  
-
 There's an issue with some devices (TF101 included) when locking the screen, because it turns black and does not wake up, so follow these steps:
 <pre>$ sudo rm -rf /usr/bin/xflock4
 
