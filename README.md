@@ -194,10 +194,6 @@ $ sudo rc-update add local
 $ sudo rc-update add proftpd
 $ sudo rc-update add polkit</pre>
 
----
-
-### XX. Bluetooth (testing, does not work at the moment):  
-
   ---
   
 ### 7. Fixing (workaround) keyboard F(1-12) keys with xdotool, xbindkeys, xbacklight AND alsa-utils (sound does not work at the moment):
@@ -492,7 +488,7 @@ EOF
 
 ---
   
-### 9.4. Enable brightness controller:  
+**9.4. Enable brightness controller:**<br/>
 If for some reason xfce4-power-manager cannot control your brightness screen, do:
 
 <pre>cat > /etc/local.d/enable-backlight.start << "EOF"
@@ -553,14 +549,37 @@ Note: redshift syntax is:
 for temperature.  
 
 ---
+
+---
+
+### 10. Bluetooth:
+
+Bluetooth can get working via `brcm_patchram_plus` package.
+
+It is partially working, as it can be enabled only via Linux Terminal and it's using bluez-deprecated package.
+
+<pre>$ sudo apk add bluez bluez-deprecated</pre>
+
+#### 10.1. Start Bluetooth automatically:
+
+<pre>cat > /etc/local.d/start-bluetooth.start << "EOF"
+#!/bin/sh
+
+#Start brcm-patchram-plus for TF101
+
+rfkill unblock 0
+/usr/sbin/brcm_patchram_plus -d --patchram /lib/firmware/postmarketos/brcm/bcm4329.hcd --baudrate 921600 --bd_addr $(cat /lib/firmware/postmarketos/brcm/mac.txt) --enable_hci /dev/ttyHS2&
+EOF
+</pre>
+
   
-**10. Make startup scripts executable**:  
+### 11. Make startup scripts executable:  
 
 <pre>$ sudo chmod +x /etc/local.d/*.start</pre>
 
 ---
 
-**11. Reboot and done!** 
+### 12. Reboot and done! 
   
 <br/>
 
@@ -570,6 +589,7 @@ for temperature.
 
 **What does not work:**  
 - Browsing (using modern web browser, segfault. Netsurf works)  
+*Note: Firefox will never work from version 53. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1305815">this link</a>*.
 - Sound  
 - Bluetooth  
 - Some xbindkeys  
