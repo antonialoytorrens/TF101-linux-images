@@ -882,5 +882,3 @@ $ sudo wget https://user-images.githubusercontent.com/6928199/29728159-235fbd0c-
 - [https://forum.xda-developers.com/sho....php?t=1683145](https://forum.xda-developers.com/showthread.php?t=1683145)  
 - [https://postmarketos.org/](https://postmarketos.org/)
 <br/>
-
----Linux
