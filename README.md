@@ -14,7 +14,9 @@ According to _Wikipedia_:
 *Note: I am currently using a 32 GB SanDisk Micro SD Card, so I do not depend of the dock keyboard.  
 Furthermore, flashing postmarketOS into an SD Card is more safe, because it does not touch any TF101 internal partitions (except the kernel blob).*  
   
-There are two ways of doing this, using my prebuilt image file or doing everything from scratch:
+There are two ways of doing this, using my prebuilt image file or doing everything from scratch.
+
+See [Windows](https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.md#windows-tested-with-xfce-only) guide or [Linux](https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.md#linux) guide.
 
 ## Linux
   
