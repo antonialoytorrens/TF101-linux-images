@@ -864,8 +864,8 @@ $ sudo wget https://user-images.githubusercontent.com/6928199/29728159-235fbd0c-
 7. Open the win32diskimager program and flash the XFCE Linux img file.
 8. Download the kernel file here: https://github.com/antonialoytorrens/TF101-linux-images/raw/master/postmarketOS/kernel_zip/PostmarketOS-kernel-3.1.10-15-r2.zip
 9. Open the adb platform tools folder in the cmd (C:\Users\user\Downloads\platform-tools).
-10. Connect your device (in TWRP recovery) and do: adb push PostmarketOS-kernel-3.1.10-15-r2.zip /sdcard.
-11. Go into your device and flash the postmarketOS kernel zip.
+10. Connect your device (in TWRP recovery) and do: `adb push PostmarketOS-kernel-3.1.10-15-r2.zip /sdcard`.
+11. In your tablet, flash the postmarketOS kernel zip.
 12. Done!
 
 <br/>
@@ -883,4 +883,4 @@ $ sudo wget https://user-images.githubusercontent.com/6928199/29728159-235fbd0c-
 - [https://postmarketos.org/](https://postmarketos.org/)
 <br/>
 
----
+---Linux
