@@ -8,13 +8,15 @@ According to _Wikipedia_:
 **What you will need:**  
 *Note: I have used a computer with Linux in this guide. I don't know if it can be done with other OS because I haven't tested it.*
 
--   A Linux computer.
+-   A computer with Linux or Windows.
 -   SD Card or Micro SD Card (optional but very recommended, preferred Micro SD Card).
 
 *Note: I am currently using a 32 GB SanDisk Micro SD Card, so I do not depend of the dock keyboard.  
 Furthermore, flashing postmarketOS into an SD Card is more safe, because it does not touch any TF101 internal partitions (except the kernel blob).*  
   
-There are two ways of doing this, using my prebuilt image file or doing everything from scratch:  
+There are two ways of doing this, using my prebuilt image file or doing everything from scratch:
+
+## Linux
   
 ## Using my prebuilt image files:
 
@@ -848,6 +850,21 @@ $ sudo wget https://user-images.githubusercontent.com/6928199/29728159-235fbd0c-
 ### 8. Reboot and done!
 
 ---
+
+## Windows (tested with XFCE only)
+
+1. Download adb platform tools here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+2. Extract it (for example, in Downloads folder).
+3. Download the XFCE Linux image here: https://sourceforge.net/projects/tf101-linux-images/files/latest/download
+4. Extract the zip file. You will get a blob file and the XFCE Linux image file. In Windows it's easier downloading the kernel zip, so let's remove the blob file.
+5. Download the win32diskimager program for writing images to a SD Card here: https://sourceforge.net/projects/win32diskimager/files/latest/download
+6. Insert the micro SD Card or the SD Card into your computer.
+7. Open the win32diskimager program and flash the XFCE Linux img file.
+8. Download the kernel file here: https://github.com/antonialoytorrens/TF101-linux-images/raw/master/postmarketOS/kernel_zip/PostmarketOS-kernel-3.1.10-15-r2.zip
+9. Open the adb platform tools folder in the cmd (C:\Users\user\Downloads\platform-tools).
+10. Connect your device (in TWRP recovery) and do: adb push PostmarketOS-kernel-3.1.10-15-r2.zip /sdcard.
+11. Go into your device and flash the postmarketOS kernel zip.
+12. Done!
 
 <br/>
 <br/>
