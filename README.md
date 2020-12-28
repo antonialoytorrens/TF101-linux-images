@@ -593,6 +593,7 @@ EOF
 
 **What does not work:**  
 - Browsing (using modern web browser, segfault. Netsurf works).
+- Device does not wake up in XFCE, see [#3](https://github.com/antonialoytorrens/TF101-linux-images/issues/3)
 - Sound  
 - Bluetooth  
 - Some xbindkeys  
