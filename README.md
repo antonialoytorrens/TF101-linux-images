@@ -592,8 +592,7 @@ EOF
 <br/>
 
 **What does not work:**  
-- Browsing (using modern web browser, segfault. Netsurf works)  
-*Note: Firefox will never work from version 53. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1305815">this link</a>*.
+- Browsing (using modern web browser, segfault. Netsurf works).
 - Sound  
 - Bluetooth  
 - Some xbindkeys  
