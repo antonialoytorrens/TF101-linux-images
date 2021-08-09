@@ -34,21 +34,21 @@ Download it [here](https://sourceforge.net/projects/tf101-linux-images/files/pos
 
 ---
   
-### **1. Flashing the image to SD Card using dd**:
+### **1. Flashing the image to Micro SD Card using dd**:
 Take special care with dd command when flashing the image. One step wrong and your hard drive is lost. I am not responsible of anything.  
-Path to SD Card may vary, mine is in /dev/sdb. Use  _fdisk -l_  command to identify your SD Card location.
+Path to Micro SD Card may vary, mine is in /dev/sdb. Use  _fdisk -l_  command to identify your Micro SD Card location.
 
--   Insert your SD Card or Micro SD Card to your computer
+-   Insert your Micro SD Card to your computer
 -   Unzip downloaded file
 
-**My SD Card is located in /dev/sdb**, so I do:
+**My Micro SD Card is located in /dev/sdb**, so I do:
 
 <pre>$ sudo dd if=/path/of/asus-tf101.img of=/dev/sdb status=progress</pre>
 
 * If you have an USB Flasher dedicated tool for your Linux distribution (Ubuntu, Linux Mint, Debian, etc.) please use it.
 
-**Extend with  _gparted_  or other disk manipulation tool the ext4 root filesystem to occupy all SD Card disk space available.**  
-In gparted, don't put swap into the SD Card because it can be harmful. Consider using zram, but I haven't tested it.  
+**Extend with  _gparted_  or other disk manipulation tool the ext4 root filesystem to occupy all Micro SD Card disk space available.**  
+In gparted, don't put swap into the Micro SD Card because it can be harmful. Consider using zram, but I haven't tested it.  
 
 ---
   
