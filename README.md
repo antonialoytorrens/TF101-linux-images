@@ -184,7 +184,7 @@ Coming soon...
 
   
 ## **Special Thanks and Rellevant Links**
-- [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), /home/anton, Jasper and all members of **PostmarketOS on Transformers on matrix.org**.
+- [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), /home/anton, Jasper and all members of **PostmarketOS on Transformers on matrix.org and members of #tegra channel on IRC (libera.chat)**.
 - Mainline Grate Kernel: https://github.com/grate-driver/linux
 - Initial TF101 implementation (with U-boot) for mainline kernel: https://github.com/grate-driver/linux/pull/23
 - U-boot source: https://github.com/mnidza/u-boot-public/tree/tf101
