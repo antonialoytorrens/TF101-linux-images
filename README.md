@@ -23,7 +23,7 @@ According to _Wikipedia_:
 
 -   A computer with Linux (it could also work with Windows, but unfortunately I don't have this OS on my computer).
 -   Micro SD Card only (required, because U-boot is configured to boot from Micro SD Card).
--   [APX Drivers](https://forum.xda-developers.com/t/adb-fb-apx-driver-universal-naked-driver-0-72.1514942/) (Windows only).
+-   [APX Drivers](https://forum.xda-developers.com/t/adb-fb-apx-driver-universal-naked-driver-0-72.1514942/) (you will need to install them if you are using Windows. Ignore this if you are using Linux).
 -   (Not tested) If you have TF101 SBK2, you may need to extract Nvflash from [here](https://github.com/francoism90/tf101-config).
 
 *Note: I am currently using a 32 GB SanDisk Micro SD Card, so I do not depend of the dock keyboard.*
