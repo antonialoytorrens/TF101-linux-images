@@ -180,7 +180,9 @@ $ sudo apk add dillo
 
 - **What about installing other distributions rather than PostmarketOS?**
 
-Coming soon...
+* **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md
+
+As you can see, installation procedure is almost the same. Not much varies installing one image or another if you are using the mainline grate kernel.
 
   
 ## **Special Thanks and Rellevant Links**
