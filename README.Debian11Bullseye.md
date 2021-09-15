@@ -83,7 +83,7 @@ It will automatically fail (in the terminal) but you will see that TF101 is boot
 | Login Information |  |
 | -- | -- |
 | **User** | tf101 |
-| **Password** | ubuntu |
+| **Password** | debian |
   
 Please change the password later whenever possible.
   
