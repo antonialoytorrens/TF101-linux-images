@@ -128,6 +128,10 @@ keyboard=onboard --theme=Nightshade -x 300 -y 400
 #screensaver-timeout=
 EOF</pre>
 
+- **Add suspend properties** (thanks [LongnoseRob](https://github.com/LongnoseRob)):
+
+<pre>$ sudo apk add pm-utils</pre>
+
 ---
 
 **Reboot and done!**  
@@ -188,7 +192,7 @@ As you can see, installation procedure is almost the same. Not much varies insta
 ## **Special Thanks and Rellevant Links**
 - [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), /home/anton, Jasper and all members of **PostmarketOS on Transformers on matrix.org and members of #tegra channel on IRC (libera.chat)**.
 - Mainline Grate Kernel: https://github.com/grate-driver/linux
-- Initial TF101 implementation (with U-boot) for mainline kernel: https://github.com/grate-driver/linux/pull/23
+- Initial TF101 implementation (with U-boot) for mainline kernel (thanks [mnidza](https://github.com/mnidza/)): https://github.com/grate-driver/linux/pull/23
 - U-boot source: https://github.com/mnidza/u-boot-public/tree/tf101
 - UEnv.txt (needed for U-boot in MicroSD Card boot partition): https://github.com/grate-driver/linux/files/6227021/uEnv.txt
 - TF101 pmaports: https://gitlab.com/antoni.aloytorrens/pmaports/-/tree/wip-tf101-pmaports
