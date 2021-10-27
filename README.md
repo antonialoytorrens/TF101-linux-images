@@ -212,6 +212,26 @@ EOF</pre>
 Mentioned in the wiki: [https://wiki.postmarketos.org/wiki/ASUS_Eee_Pad_Transformer_(asus-tf101)#Hardware_status_.28mainline.29](https://wiki.postmarketos.org/wiki/ASUS_Eee_Pad_Transformer_(asus-tf101)#Hardware_status_.28mainline.29)
 
 ## **Troubleshooting**
+
+- **Why can't I boot from eMMC and only from MicroSD Card?**
+
+Tegra devices uses a special partition scheme (tegra-specific partition table). Uboot does not have such feature, so it cannot identify internal partitions, so it does not boot from them.<br/>
+However, work is being done to support tegra partitions on U-Boot.
+
+- **The UI is not starting**
+
+That is a known problem. Newer XServer versions do not work on the TF101.<br/>
+More info here: https://gitlab.com/postmarketOS/pmaports/-/merge_requests/2605<br/>
+
+If you are using Debian 11, you shouldn't have this type of issue.<br/>
+WORKAROUND: Download my prebuilt image, because it contains an older xorg-server version. You can update/upgrade your system as normal, as this package is pinned and is not upgraded at all, even if newer releases exist.<br/>
+
+If you want to view the source package, you can see it [here]().
+
+- **Will X.X.X.X firmware version or XXXX region work on my TF101 if I flash U-Boot?**
+
+Yes, it will. I've put the latest known firmware available just in case my statement is not true and problems will be easier to diagnose. Anyways, U-Boot is even lower-level than firmware versions/regions, so they shouldn't be a problem.
+
 - **WiFi is not working, what should I do?**
 
 Open a terminal and type:
