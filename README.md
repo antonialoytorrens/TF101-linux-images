@@ -52,33 +52,102 @@ In gparted, don't put swap into the Micro SD Card because it can be harmful. Con
 
 ---
   
-### **2. U-boot for TF101 and Nvflash** (workaround)
+### **2. U-boot for TF101, Wheelie and Nvflash**
+#### Installation
+:warning: **WARNING** :warning:<br/>
+**This mainline installation does not work for TF101G or SL101 variants! Please use downstream installation instead.<br/>
+In addition, these steps will format ALL the partitions of the TF101's partition table and then recreate them but with u-boot bootloader flashed on it, instead of the proprietary Asus Bootloader.<br/>
+Make sure you backup your data before continuing. Note also that you won't be able to boot Android back easily.**
 
-Before continuing, insert your Micro SD Card to the tablet.
+* A Linux computer is required (virtual machine won't work). Furthermore, this installation process has not been verified by a TF101 SBK2 version but it should also work.
 
-If you don't know what nvflash is, click [here](https://nvflash.en.lo4d.com/windows).
+Use the latest 9.2.1 firmware available, so upgrade if you need it: https://www.asus.com/us/supportonly/Eee%20Pad%20Transformer%20TF101/HelpDesk_BIOS/<br/>
+If the upper link does not work, try this one: https://web.archive.org/web/20211008161750/https://www.asus.com/us/supportonly/Eee%20Pad%20Transformer%20TF101/HelpDesk_BIOS/.
 
-Newer Nvflash versions do not support old Tegra 2 chips. 
-I'll post what I use for Nvflashing [here](https://github.com/antonialoytorrens/TF101-linux-images/raw/master/vendor/nvflash-sbk1/tf101-sbk1-nvflash.zip). U-boot for TF101 and TF101 SBK1 keys are included.
+You must know which [SBK version](https://forum.xda-developers.com/t/how-to-find-my-sbk-version.1643002/) your tablet has. For the asus-tf101, there are two versions only: sbkv1 and sbkv2.
 
+However there is a caveat: two proprietary tools are needed, Wheelie (although source code is available on [GitHub](https://github.com/AndroidRoot/wheelie), some key features are missing) and Nvflash (proprietary Nvidia flash tool).
+So, a custom setup is available to get this working a little bit easier.
 
-To activate Nvflash, you need to put the tablet into APX mode.
-To do so, power off the tablet, and then press POWER + VOLUME UP for 5 seconds.
-APX Drivers are required for TF101 detection on your computer.
+* Mind that you should already have your postmarketOS image flashed on your Micro SD Card.
 
+1. Connect the device to the computer. This [USB to 40 Pin cable](https://imgur.com/a/mfiryeP) is required.
 
-Like it says in the title, is only (at the moment) a workaround to boot PostmarketOS (or other Linux distributions) on it.
-When Nvflashing U-boot, it only acts as a temporary bootloader when booting Linux on TF101. That being said, it means that when rebooting the tablet
-or powering off and on, normal Asus Bootloader will appear again and you will boot into Android (if it's installed in eMMC).
+3. Put your device into APX mode: First of all, power off the device and then press the power button + volume up button for 3 to 5 seconds.
 
-So unfortunately, you need to do this step every time you need to boot Linux.
-I have considered `kexec` or embedding U-Boot bootloader as a kernel blob, but I have been unsuccessful and I don't have the necessary knowledge to implement it.
+4. Download U-Boot Tools for Asus Eee Pad Transformer TF101 [here](https://gitlab.com/antoni.aloytorrens/u-boot-tf101-tools/-/releases). Please read the release notes for instructions.
 
-To nvflash I do this (see `command.sh` in my nvflash file): 
+* If you are unsure which SBK version you have, please try both flashing methods.
 
-<pre>sudo ./nvflash --bct transformer.bct --setbct --configfile flash.cfg --bl u-boot.bin --odmdata 0x300d8011 --sbk 0x1682CCD8 0x8A1A43EA 0xA532EEB6 0xECFE1D98 --sync</pre>
+:warning: Do not unplug the USB under any circumstance. :warning:
 
-It will automatically fail (in the terminal) but you will see that TF101 is booting mainline Linux!
+4. Some operations will be executed on the tablet. Please be patient, wait from 5 to 10 minutes. Formatting Partition 15 (UDA) can also take some time. In case you don't know the SBK version of your tablet, you will see some errors, or the device not booting at all. In that case, please try the other SBK version.
+
+Expected output (SBK1 example):
+<pre>
+user@mycomputer:~$ ./uboot_sbkv1.sh 
+Wheelie 0.1 - Preflight for nvflash.
+Copyright (c) 2011-2012 androidroot.mobi
+========================================
+
+Using SBK type 1.
+Using bootloader: 'bootloader.bin'.
+Using BCT: 'transformer.bct'.
+----------------------------------------
+
+[=] Chip UID: YourHardwareID
+[=] RCM Version: 0x20001
+
+[=] CPU Model: Tegra 2
+[=] Secure Boot Key Set: Yes
+[+] Sending BCT
+Sending file: 100 %
+[+] Sending ODMData 0x300D8011
+[+] Sending bootloader...
+Sending file: 100 %
+[!] Done - your device should now be ready for nvflash
+Nvflash started
+[resume mode]
+setting device: 2 3
+creating partition: BCT
+creating partition: PT
+creating partition: EBT
+creating partition: SOS
+creating partition: LNX
+creating partition: BAK
+creating partition: GP1
+creating partition: APP
+creating partition: CAC
+creating partition: MSC
+creating partition: USP
+creating partition: PER
+creating partition: YTU
+creating partition: UDA
+creating partition: GPT
+Formatting partition 2 BCT please wait.. done!
+Formatting partition 3 PT please wait.. done!
+Formatting partition 4 EBT please wait.. done!
+Formatting partition 5 SOS please wait.. done!
+Formatting partition 6 LNX please wait.. done!
+Formatting partition 7 BAK please wait.. done!
+Formatting partition 8 GP1 please wait.. done!
+Formatting partition 9 APP please wait.. done!
+Formatting partition 10 CAC please wait.. done!
+Formatting partition 11 MSC please wait.. done!
+Formatting partition 12 USP please wait.. done!
+Formatting partition 13 PER please wait.. done!
+Formatting partition 14 YTU please wait.. done!
+Formatting partition 15 UDA please wait.. done!
+Formatting partition 16 GPT please wait.. done!
+done!
+sending file: u-boot.bin
+- 565989/565989 bytes sent
+u-boot.bin sent successfully
+Nvflash started
+[resume mode]
+</pre>
+
+8. Now press the power button for a few seconds to reboot the device. After that, disconnect the USB from the device. It should be booting PostmarketOS!
 
 ---
 
