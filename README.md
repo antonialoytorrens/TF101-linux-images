@@ -64,6 +64,8 @@ Make sure you backup your data before continuing. Note also that you won't be ab
 Use the latest 9.2.1 firmware available, so upgrade if you need it: https://www.asus.com/us/supportonly/Eee%20Pad%20Transformer%20TF101/HelpDesk_BIOS/<br/>
 If the upper link does not work, try this one: https://web.archive.org/web/20211008161750/https://www.asus.com/us/supportonly/Eee%20Pad%20Transformer%20TF101/HelpDesk_BIOS/.
 
+* *Note*: It should not be a problem if you are using a lower firmware version, since U-Boot is even lower-level than firmware-related versions.
+
 You must know which [SBK version](https://forum.xda-developers.com/t/how-to-find-my-sbk-version.1643002/) your tablet has. For the asus-tf101, there are two versions only: sbkv1 and sbkv2.
 
 However there is a caveat: two proprietary tools are needed, Wheelie (although source code is available on [GitHub](https://github.com/AndroidRoot/wheelie), some key features are missing) and Nvflash (proprietary Nvidia flash tool).
@@ -226,11 +228,11 @@ More info here: https://gitlab.com/postmarketOS/pmaports/-/merge_requests/2605<b
 If you are using Debian 11, you shouldn't have this type of issue.<br/>
 WORKAROUND: Download my prebuilt image, because it contains an older xorg-server version. You can update/upgrade your system as normal, as this package is pinned and is not upgraded at all, even if newer releases exist.<br/>
 
-If you want to view the source package, you can see it [here]().
+If you want to view the source package and/or build it yourself, you can see it [here](https://github.com/antonialoytorrens/TF101-linux-images/blob/master/vendor/xserver-xorg-pmOS/xorg-server-9999-1.20.11.zip).
 
 - **Will X.X.X.X firmware version or XXXX region work on my TF101 if I flash U-Boot?**
 
-Yes, it will. I've put the latest known firmware available just in case my statement is not true and problems will be easier to diagnose. Anyways, U-Boot is even lower-level than firmware versions/regions, so they shouldn't be a problem.
+Yes, it will. U-Boot is even lower-level than firmware versions/regions, so it shouldn't be a problem.
 
 - **WiFi is not working, what should I do?**
 
