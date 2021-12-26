@@ -215,6 +215,14 @@ Mentioned in the wiki: [https://wiki.postmarketos.org/wiki/ASUS_Eee_Pad_Transfor
 
 ## **Troubleshooting**
 
+- **Nvflash does not work for me, and I cannot nvflash to the tablet**
+
+I have tested this with Ubuntu 20.04, Debian 10 and Linux Mint 20.2 Uma.
+If nvflash does not work for you, please download from [official Nvidia Tegra sources](https://web.archive.org/web/20150804234956/http://developer.download.nvidia.com/assets/mobile/files/tegra-linux-12.alpha.1.0.tar.gz) and try it again. There are more files there, just search nvflash binary and replace it accordingly.
+
+If you cannot get APX to work, please install `Android Debug Bridge` tools and try it again.<br/>
+For last option, you can try rootbind method (thanks [CrazyPlaysHD](https://github.com/CrazyPlaysHD)): https://github.com/antonialoytorrens/TF101-linux-images/issues/11
+
 - **Why can't I boot from eMMC and only from MicroSD Card?**
 
 Tegra devices uses a special partition scheme (tegra-specific partition table). Uboot does not have such feature, so it cannot identify internal partitions, so it does not boot from them.<br/>
