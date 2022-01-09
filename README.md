@@ -292,7 +292,7 @@ As you can see, installation procedure is almost the same. Not much varies insta
 ## **Special Thanks and Rellevant Links**
 
 **Special Thanks**
-- [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), jenneron, Jasper, [LongnoseRob](https://github.com/LongnoseRob), [Antoni Aloy Torrens](https://github.com/antonialoytorrens) and all members of **PostmarketOS on Transformers on matrix.org and members of #tegra channel on IRC (libera.chat)**.
+- [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), jenneron, Jasper, [LongnoseRob](https://github.com/LongnoseRob), [CrazyPlaysHD](https://github.com/CrazyPlaysHD), [Antoni Aloy Torrens](https://github.com/antonialoytorrens) and all members of **PostmarketOS on Transformers on matrix.org and members of #tegra channel on IRC (libera.chat)**.
 
 **Kernel**
 - [Dmitry Osipenko](https://github.com/digetx) and contributors for mainline Grate Kernel: https://github.com/grate-driver/linux
