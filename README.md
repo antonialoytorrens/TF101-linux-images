@@ -290,11 +290,29 @@ As you can see, installation procedure is almost the same. Not much varies insta
 
   
 ## **Special Thanks and Rellevant Links**
+
+**Special Thanks**
 - [Svyatoslav Ryhel](https://github.com/clamor-s), [Dmitry Osipenko](https://github.com/digetx), [Ion Agorria](https://gitlab.com/IonAgorria), [Raffaele T.](https://tuxphones.com/author/r/), [David Heidelberg](https://floss.social/@okias), /home/anton, jenneron, Jasper and all members of **PostmarketOS on Transformers on matrix.org and members of #tegra channel on IRC (libera.chat)**.
-- Mainline Grate Kernel: https://github.com/grate-driver/linux
+
+**Kernel**
+- [Dmitry Osipenko](https://github.com/digetx) and contributors for mainline Grate Kernel: https://github.com/grate-driver/linux
+
+**U-Boot**
 - Initial TF101 implementation (with U-boot) for mainline kernel (thanks [mnidza](https://github.com/mnidza/)): https://github.com/grate-driver/linux/pull/23
 - U-boot source: https://github.com/mnidza/u-boot-public/tree/tf101
 - UEnv.txt (needed for U-boot in MicroSD Card boot partition): https://github.com/grate-driver/linux/files/6227021/uEnv.txt
+
+- [Svyatoslav Ryhel](https://github.com/clamor-s) for continuing U-Boot development for TF101 and even implement it for other Tegra devices (if you want to check U-Boot sources, click here as they are more recent and developed). [View source](https://github.com/clamor-s/u-boot/).
+
+**Rootbind**
+- [jrohwer](https://forum.xda-developers.com/m/jrohwer.3753391/) for its [Rootbind method](https://forum.xda-developers.com/t/kernel-mod-linux-rootbind-native-emmc-all-tf101-tf101g-fast-tested-2-jul-13.2347581/).
+- [Kingzak34](https://forum.xda-developers.com/m/kingzak34.3447252/) for its [guide](https://forum.xda-developers.com/t/guide-dual-boot-theeasyway-how-to-setup-linux-rootbind-method-updated-may-16th.2684854/).
+- [CrazyPlaysHD](https://github.com/CrazyPlaysHD) for testing and update Rootbind for the latest Debian Distribution. [See here](https://github.com/antonialoytorrens/TF101-linux-images/issues/11).
+
+**Pmaports (WIP but functional)**
 - TF101 pmaports: https://gitlab.com/antoni.aloytorrens/pmaports/-/tree/wip-tf101-pmaports
+
+**Distributions**
 - PostmarketOS: https://postmarketos.org/
+- Debian: https://debian.org
 <br/>
