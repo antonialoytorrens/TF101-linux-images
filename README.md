@@ -302,7 +302,7 @@ As you can see, installation procedure is almost the same. Not much varies insta
 - U-boot source: https://github.com/mnidza/u-boot-public/tree/tf101
 - UEnv.txt (needed for U-boot in MicroSD Card boot partition): https://github.com/grate-driver/linux/files/6227021/uEnv.txt
 
-- [Svyatoslav Ryhel](https://github.com/clamor-s) for continuing U-Boot development for TF101 and even implement it for other Tegra devices (if you want to check U-Boot sources, click here as they are more recent and developed). [View source](https://github.com/clamor-s/u-boot/).
+- [Svyatoslav Ryhel](https://github.com/clamor-s) for continuing U-Boot development for TF101 and even implementing it for other Tegra devices (if you want to check U-Boot sources, click here as they are more recent and developed). [View source](https://github.com/clamor-s/u-boot/).
 
 **Rootbind**
 - [jrohwer](https://forum.xda-developers.com/m/jrohwer.3753391/) for its [Rootbind method](https://forum.xda-developers.com/t/kernel-mod-linux-rootbind-native-emmc-all-tf101-tf101g-fast-tested-2-jul-13.2347581/).
