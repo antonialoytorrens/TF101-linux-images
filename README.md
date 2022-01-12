@@ -11,6 +11,10 @@ PLEASE BACKUP YOUR DATA BEFORE CONTINUING.
 
 READ ALL THE GUIDE AND TROUBLESHOOTING SECTION BEFORE POSTING AN ISSUE.</b>
 
+---
+
+⚠️ <b>Note: If you use my prebuilt image file, mind that you won't have official PostmarketOS support to ask for issues. The easier way is downloading my prebuilt image file, but the recommended way is building everything from scratch.</b> ⚠️
+
 ## **Introduction**
 
 This is a guide about how to run Native Linux on the Asus Eee Pad Transformer TF101.
