@@ -30,5 +30,14 @@ You can download the image [here](https://sourceforge.net/projects/tf101-linux-i
 
 However, you may also want to install U-Boot on the TF101 (very recommended), but that requires some additional work (a bit harder to setup), [see the Debian README for example](https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md) with the Devuan file system.
 
+## Login information
+
+**User**: tf101
+**Password**: devuan
+
+**Root password**: DEVUAN
+
+**VNC server password**: Devuan
+
 ## Credits
 [See here](https://github.com/antonialoytorrens/TF101-linux-images#special-thanks-and-rellevant-links) for credits.
