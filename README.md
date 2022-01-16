@@ -289,6 +289,7 @@ $ sudo apk add dillo
 - **What about installing other distributions rather than PostmarketOS?**
 
 * **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md
+* **Devuan 4 Chimaera**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Devuan4Chimaera.md
 
 As you can see, installation procedure is almost the same. Not much varies installing one image or another if you are using the mainline grate kernel.
 
@@ -311,7 +312,8 @@ As you can see, installation procedure is almost the same. Not much varies insta
 **Rootbind**
 - [jrohwer](https://forum.xda-developers.com/m/jrohwer.3753391/) for its [Rootbind method](https://forum.xda-developers.com/t/kernel-mod-linux-rootbind-native-emmc-all-tf101-tf101g-fast-tested-2-jul-13.2347581/).
 - [Kingzak34](https://forum.xda-developers.com/m/kingzak34.3447252/) for its [guide](https://forum.xda-developers.com/t/guide-dual-boot-theeasyway-how-to-setup-linux-rootbind-method-updated-may-16th.2684854/).
-- [CrazyPlaysHD](https://github.com/CrazyPlaysHD) for testing and update Rootbind for the latest Debian Distribution. [See here](https://github.com/antonialoytorrens/TF101-linux-images/issues/11).
+- [CrazyPlaysHD](https://github.com/CrazyPlaysHD) for testing and updating Rootbind to the latest Debian release (as of now, Debian 11 Bullseye). [See here](https://github.com/antonialoytorrens/TF101-linux-images/issues/11).
+- [Prowler_gr](https://forum.xda-developers.com/m/prowler_gr.2630853/) for testing and updating Rootbind to the latest Devuan release (as of now, Devuan 4 Chimaera). [See here](https://forum.xda-developers.com/t/linux-img-dev-wip-ubuntu-images-for-rootbind-tf101-tf101g.2648862/page-23#post-86260727).
 
 **Pmaports (WIP but functional)**
 - TF101 pmaports: https://gitlab.com/antoni.aloytorrens/pmaports/-/tree/wip-tf101-pmaports
@@ -319,4 +321,5 @@ As you can see, installation procedure is almost the same. Not much varies insta
 **Distributions**
 - PostmarketOS: https://postmarketos.org/
 - Debian: https://debian.org
+- Devuan: https://devuan.org
 <br/>
