@@ -29,3 +29,6 @@ This is a guide about how to run Native Linux on the Asus Eee Pad Transformer TF
 You can download the image [here](https://sourceforge.net/projects/tf101-linux-images/files/devuan-4-chimaera-grate/rootbind/Devuan4-tf101-armhf_20220115.zip) and then follow this [existing method](https://github.com/antonialoytorrens/TF101-linux-images/issues/11), but replacing Debian filesystem with the Devuan one.
 
 However, you may also want to install U-Boot on the TF101 (very recommended), but that requires some additional work (a bit harder to setup), [see the Debian README for example](https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md) with the Devuan file system.
+
+## Credits
+[See here](https://github.com/antonialoytorrens/TF101-linux-images#special-thanks-and-rellevant-links) for credits.
