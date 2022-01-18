@@ -288,7 +288,7 @@ $ sudo apk add dillo
 
 - **What about installing other distributions rather than PostmarketOS?**
 
-* **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md
+* **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md. [Video available](https://www.youtube.com/watch?v=XWvIuZQSH-E).
 * **Devuan 4 Chimaera**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Devuan4Chimaera.md
 
 As you can see, installation procedure is almost the same. Not much varies installing one image or another if you are using the mainline grate kernel.
