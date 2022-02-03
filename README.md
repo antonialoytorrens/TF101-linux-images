@@ -288,7 +288,7 @@ $ sudo apk add dillo
 
 - **What about installing other distributions rather than PostmarketOS?**
 
-* **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md. [Video available](https://youtu.be/Rb8rVW_74w0).
+* **Debian 11 Bullseye**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Debian11Bullseye.md. [U-Boot method installation video (recommended)](https://youtu.be/Rb8rVW_74w0). For TF101G and SL101G (or TF101 dual-booting Android and Linux), here's the [Rootbind method installation video](https://youtu.be/L2oD4SKdMbo).
 * **Devuan 4 Chimaera**: https://github.com/antonialoytorrens/TF101-linux-images/blob/master/README.Devuan4Chimaera.md
 
 As you can see, installation procedure is almost the same. Not much varies installing one image or another if you are using the mainline grate kernel.
